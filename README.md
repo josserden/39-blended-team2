@@ -19,7 +19,7 @@
   ```
 
 ### Bracket Pair Colorizer
-  ```
+  ```html
 "bracketPairColorizer.consecutivePairColors": [
         ["<", "</"],
         ["<", "/>"],
