@@ -48,3 +48,9 @@
     <body></body>
 </html>
 ```
+
+```css
+body {
+    margin:0;
+}
+```
