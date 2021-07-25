@@ -1,29 +1,40 @@
 .company__list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    @include parentGrid();
 }
+
+.company__item {
+    @include itemGrid();
+    flex-basis: calc((100% - 2 * 30px) / 2);
+
+    @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 3 * 30px) / 3);
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc((100% - 6 * 30px) / 6);
+    }
+}
+
 .company__link {
-  transition-property: fill, border;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 170px;
-  height: 90px;
-  cursor: pointer;
-  border-radius: 4px;
-  fill: var(--icon-color);
-  border: 1px solid var(--icon-color);
+    width: 100%;
+    height: 90px;
 
-  &:hover,
-  &:focus {
-    fill: var(--accent-color);
-    border: 1px solid var(--accent-color);
-  }
-}
-.company__item:not(:last-child) {
-  margin-right: 30px;
+    transition-property: fill, border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    cursor: pointer;
+    border-radius: 4px;
+    fill: var(--icon-color);
+    border: 1px solid var(--icon-color);
+
+    &:hover,
+    &:focus {
+        fill: var(--accent-color);
+        border: 1px solid var(--accent-color);
+    }
 }
