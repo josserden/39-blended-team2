@@ -1,0 +1,8 @@
+.work__title,
+.team__title,
+.company__title {
+  @include font(36px, 1.16, 0.03em);
+  margin-bottom: 50px;
+  text-align: center;
+  color: var(--secondary-color);
+}

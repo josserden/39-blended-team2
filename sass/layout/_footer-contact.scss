@@ -1,0 +1,35 @@
+.connect {
+  transition-property: var(--hero-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  @include font(14px, 1.71, 0.03em);
+  font-style: normal;
+  font-weight: 400;
+  color: var(--title-color);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+.address {
+  margin-top: 20px;
+  font-style: inherit;
+}
+.contacts-item:not(:first-child) {
+  margin-top: 10px;
+}
+.hookup-footer {
+  transition-property: var(--hero-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  font-style: normal;
+  color: var(--text-color);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}

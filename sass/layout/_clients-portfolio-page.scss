@@ -1,0 +1,81 @@
+.client {
+  margin-top: -30px;
+  margin-left: -30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.client-list {
+  display: flex;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+.client-name {
+  padding: 20px 24px;
+  border-right: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
+}
+
+.client-item {
+  transition-property: transform, transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  flex-basis: calc((100% - 3 * 30px) / 3);
+  margin-top: 30px;
+  margin-left: 30px;
+
+  &:hover,
+  &:hover .client-overlay {
+    transform: translateY(0%);
+    box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+}
+.client-title {
+  @include font(18px, 2, 0.06em);
+  margin-bottom: 4px;
+  color: var(--secondary-color);
+}
+.client-text {
+  @include font(16px, 1.87, 0.03em);
+  font-weight: 400;
+  color: var(--text-color);
+}
+.client-link {
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  display: block;
+
+  &:hover,
+  &:focus,
+  &:hover .client-overlay,
+  &:focus .client-overlay {
+    transform: translateY(0%);
+    box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+}
+.client-overlay-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+.client-overlay {
+  transition-property: transform, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(100%);
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+
+  @include font(18px, 1.56, 0.03em);
+  padding: 60px 25px;
+  font-weight: 400;
+
+  background-color: rgba(33, 150, 243, 0.9);
+  color: var(--title-color);
+}

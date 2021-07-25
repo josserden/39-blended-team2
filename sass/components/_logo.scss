@@ -1,0 +1,16 @@
+.logo,
+.half-logo {
+  @include font(26px, 1.19, 0.03em);
+  font-family: "Raleway", sans-serif;
+  color: var(--half-logo-color);
+}
+.logo {
+  margin-right: 90px;
+}
+.half-logo {
+  color: var(--accent-color);
+}
+.footer-logo {
+  margin-right: 0;
+  color: var(--title-color);
+}
