@@ -5,5 +5,5 @@
 | [Занятие 1](https://github.com/josserden/39-blended-team2/tree/lesson-1) |
 | [Занятие 2](https://github.com/josserden/39-blended-team2/tree/lesson-2) |
 |                              [Занятие 3]()                               |
-|                              [Занятие 4]()                               |
+| [Занятие 4](https://github.com/josserden/39-blended-team2/tree/lesson-4) |
 |                              [Занятие 5]()                               |
