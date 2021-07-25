@@ -1,11 +1,15 @@
 body {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+    font: {
+        family: 'Roboto', sans-serif;
+        style: normal;
+        weight: 700;
+        size: 14px;
+    }
+
+    line-height: 1.14;
+    letter-spacing: 0.03em;
 }
+
 h1,
 h2,
 h3,
@@ -13,26 +17,30 @@ h4,
 h5,
 h6,
 p {
-  margin-top: 0;
-  margin-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
+
 ul,
 ol {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
 }
+
 img {
-  display: block;
+    display: block;
 }
 
 .link {
-  text-decoration: none;
+    text-decoration: none;
 }
+
 .list {
-  list-style: none;
+    list-style: none;
 }
+
 .section {
-  padding-top: 95px;
-  padding-bottom: 95px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }

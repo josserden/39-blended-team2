@@ -24,7 +24,7 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -63,8 +63,8 @@ img {
 }
 
 .section {
-  padding-top: 95px;
-  padding-bottom: 95px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .container {
@@ -328,28 +328,47 @@ img {
   background: var(--hover-btn);
 }
 
+.specifics {
+  padding-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .preference__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .preference__item {
+    margin-top: 30px;
+    margin-left: 30px;
+    flex-basis: calc((100% - 2 * 30px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .preference__item {
+    flex-basis: calc((100% - 4 * 30px) / 4);
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .preference__item:not(:first-child) {
+    margin-top: 30px;
+  }
+}
+
 .preference__item-icon {
   display: flex;
-  width: 270px;
+  width: 100%;
   height: 120px;
   margin-bottom: 30px;
   justify-content: center;
   align-items: center;
   background: var(--team-section-color);
-}
-
-.specifics {
-  padding-bottom: 0;
-}
-
-.preference__list {
-  display: flex;
-  margin-left: -30px;
-}
-
-.preference__item {
-  margin-left: 30px;
-  flex-basis: calc((100% - 4 * 30px) / 4);
 }
 
 .preference__title {

@@ -1,34 +1,50 @@
-.preference__item-icon {
-  display: flex;
-  width: 270px;
-  height: 120px;
-  margin-bottom: 30px;
-  justify-content: center;
-  align-items: center;
-  background: var(--team-section-color);
+.specifics {
+    padding-bottom: 0;
 }
 
-.specifics {
-  padding-bottom: 0;
-}
 .preference__list {
-  display: flex;
-  margin-left: -30px;
+    @media screen and (min-width: 768px) {
+        @include parentGrid();
+    }
 }
+
 .preference__item {
-  margin-left: 30px;
-  flex-basis: calc((100% - 4 * 30px) / 4);
+    @media screen and (min-width: 768px) {
+        @include itemGrid();
+        flex-basis: calc((100% - 2 * 30px) / 2);
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc((100% - 4 * 30px) / 4);
+    }
+}
+
+.preference__item:not(:first-child) {
+    @media screen and (max-width: 767.98px) {
+        margin-top: 30px;
+    }
+}
+
+.preference__item-icon {
+    display: flex;
+    width: 100%;
+    height: 120px;
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+    background: var(--team-section-color);
 }
 
 .preference__title {
-  text-transform: uppercase;
-  color: var(--secondary-color);
+    text-transform: uppercase;
+    color: var(--secondary-color);
 }
-.preference__text {
-  margin-top: 10px;
-  width: 270px;
 
-  font-weight: 400;
-  line-height: 1.71;
-  color: var(--text-color);
+.preference__text {
+    margin-top: 10px;
+    width: 270px;
+
+    font-weight: 400;
+    line-height: 1.71;
+    color: var(--text-color);
 }
