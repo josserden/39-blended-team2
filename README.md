@@ -1,9 +1,5 @@
-## Ссылки на занятия (в отдельных ветках)
+## lesson-4
 
-|                                 Занятия                                  |
-| :----------------------------------------------------------------------: |
-| [Занятие 1](https://github.com/josserden/39-blended-team2/tree/lesson-1) |
-| [Занятие 2](https://github.com/josserden/39-blended-team2/tree/lesson-2) |
-|                              [Занятие 3]()                               |
-|                              [Занятие 4]()                               |
-|                              [Занятие 5]()                               |
+### Общая информация о БЭМ
+
+[Bem Cheat Sheet](https://9elements.com/bem-cheat-sheet/)
